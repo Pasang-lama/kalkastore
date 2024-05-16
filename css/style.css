@@ -26,7 +26,8 @@ a {
 ul {
     list-style: none;
 }
-.flex-1{
+
+.flex-1 {
     flex: 1;
 }
 
@@ -53,46 +54,157 @@ header .middle-header {
 .middle-header ul {
     display: flex;
 }
+
 .middle-header ul li {
     width: 100px;
     border-radius: 2px;
     text-align: center;
     padding: 10px 0px;
 }
-.middle-header ul li:hover{
-    background-color: var(--secondary-color);
-}
-.middle-header ul li:hover  a{
-   color: white !important;
-}
-.middle-header ul li a {
-    color: var(--secondary-color) !important;
-   font-size: 14px;
-   font-weight: 500;
 
-}
-
-.middle-header ul .active{
+.middle-header ul li:hover {
     background-color: var(--secondary-color);
 }
 
-.middle-header ul li:last-child a{
-    color:var(--primary-color) !important;
-}
-
-.middle-header ul .active a{
+.middle-header ul li:hover a {
     color: white !important;
 }
-.logo{
+
+.middle-header ul li a {
+    color: var(--secondary-color) !important;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.middle-header ul .active {
+    background-color: var(--secondary-color);
+}
+
+.middle-header ul li:last-child a {
+    color: var(--primary-color) !important;
+}
+
+.middle-header ul .active a {
+    color: white !important;
+}
+
+.logo {
     text-align: center;
 }
 
-.middle-header .search{
+.middle-header .search {
     display: flex;
     justify-content: end;
     gap: 50px;
 }
-.middle-header .icons-wrapper{
+
+.middle-header .icons-wrapper {
     display: flex;
     gap: 20px;
+}
+
+.middle-header .icons-wrapper a {
+    font-size: 24px;
+    color: var(--secondary-color) !important;
+}
+
+.middle-header .whishlist {
+    position: relative;
+}
+
+.middle-header .whishlist span {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 10px;
+    padding: 5px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.middle-header .search form {
+    display: flex;
+}
+
+.middle-header .search input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(167, 167, 167);
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.middle-header .search input:focus-visible {
+    outline: none;
+}
+
+.middle-header .search input::placeholder {
+    font-size: 10px;
+}
+
+.middle-header .search button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 12px;
+    padding: 0px 15px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+header .bottm-header {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1px;
+}
+
+header .bottm-header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 0px;
+}
+
+header .bottm-header ul li:hover a {
+    color: var(--primary-color) !important;
+}
+
+header .bottm-header ul li:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header .bottm-header ul li:last-child {
+    margin-right: 0px;
+}
+
+header .bottm-header ul li a {
+    font-size: 14px;
+    color: black !important;
+}
+
+/* banner css  */
+.banner-slider {
+    position: relative;
+}
+
+.banner-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+.banner-slider .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.banner-slider .owl-nav button span {
+    font-size: 40px;
+    background-color: #e5e5e5;
+    padding: 0px 20px;
+}
+
+.banner-slider .owl-nav button:hover span {
+    background-color: #c25c5c;
 }
